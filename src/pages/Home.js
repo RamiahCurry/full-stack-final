@@ -1,39 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import YouTubeVideo from './YouTubeVideo';
-import './Home.css';
-
+import YouTubeVideo from './YoutubeVideo';
 
 const Home = () => {
   return (
-    <div style={{
-      position: 'relative',
-      height: '100vh',
-      width: '100%',
-      overflow: 'hidden'
-    }}>
-      <YouTubeVideo videoId="7JcI3zmIM6A" />
-      <div style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        textAlign: 'center',
-        color: 'white'
-      }}>
-        <h1>Welcome, Future Morehouse Students!</h1>
-        <p>Sign in to explore courses, advice, and more!</p>
-        <Link to="/signin" style={{
-          background: 'maroon',
-          color: 'white',
-          padding: '10px 20px',
-          borderRadius: '5px',
-          textDecoration: 'none'
-        }}>Sign In</Link>
+    <div style={{ textAlign: 'center', maxWidth: '800px', margin: 'auto' }}>
+      <h1 style={{ color: 'maroon' }}>Welcome, Future Morehouse Students!</h1>
+      <p>Here you can find relevant advice for your journey as a Morehouse Computer Science student.</p>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+        <div style={{ marginRight: '10px' }}>
+          <Link to="/basic-form">Go to Sign Up Sheet</Link>
+        </div>
+        <div>
+          <Link to="/advice">Advice + Current Events</Link>
+        </div>
       </div>
+      <hr />
+      <h2>Morehouse Virtual Tour</h2>
+      <YouTubeVideo videoId="7JcI3zmIM6A" />
     </div>
   );
 };
 
 export default Home;
-

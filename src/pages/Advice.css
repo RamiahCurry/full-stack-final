@@ -1,0 +1,36 @@
+.advice-container {
+    background: url('path_to_background_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Assuming white text looks good on your background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .advice-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+  }
+  
+  .advice-list li {
+    margin: 20px 0;
+  }
+  
+  .advice-list li a {
+    color: white; /* Color of the links */
+    font-size: 24px; /* Larger font size */
+    text-decoration: none; /* Removes underline from links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .advice-list li img {
+    width: 100px; /* Set the size of the images */
+    height: 100px; /* Set the size of the images */
+    margin-right: 10px; /* Spacing between image and text */
+  }
+  
+  h1 {
+    margin-bottom: 30px; /* Space below the header */
+  }
+  

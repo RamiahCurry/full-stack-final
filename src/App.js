@@ -5,6 +5,10 @@ import Home from './pages/Home';
 import BasicForm from './pages/BasicForm';
 import Advice from './pages/Advice';
 import './App.css';
+import FreshmanAdvice from './components/FreshmanAdvice';
+import SophomoreAdvice from './components/SophomoreAdvice';
+import JuniorAdvice from './components/JuniorAdvice';
+import SeniorAdvice from './components/SeniorAdvice';
 
 function App() {
   return (
@@ -14,6 +18,10 @@ function App() {
           <Route exact path="/" element={<Home/>} />
           <Route path="/basic-form" element={<BasicForm/>} />
           <Route path="/advice" element={<Advice/>} />
+          <Route path="/advice/freshman" element={<FreshmanAdvice />} />
+          <Route path="/advice/sophomore" element={<SophomoreAdvice />} />
+          <Route path="/advice/junior" element={<JuniorAdvice />} />st
+          <Route path="/advice/senior" element={<SeniorAdvice />} />
         </Routes>
       </Router>
     </div>
