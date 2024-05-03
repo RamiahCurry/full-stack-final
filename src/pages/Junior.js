@@ -9,7 +9,7 @@ const Junior = () => {
     { key: 'prepare-grad-school', text: 'Prepare for Graduate School: Start your preparation for graduate school applications, from exams to essays.' },
     { key: 'deepen-connections', text: 'Deepen Academic and Professional Connections: Strengthen relationships with professors and industry professionals for future opportunities and mentorships.' }
   ];
-  const courses = ["Machine Learning", "Embedded Systems", "Complex Algorithms"];
+  const courses = ["Machine Learning", "Full Stack Development", "Database Systems"];
   const books = [
     "Algorithms to Live By by Brian Christian and Tom Griffiths",
     "The Mythical Man-Month by Frederick P. Brooks Jr."

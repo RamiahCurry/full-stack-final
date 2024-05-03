@@ -4,13 +4,10 @@ import YouTubeVideo from './YoutubeVideo';
 
 const Home = () => {
   return (
-    <div style={{ textAlign: 'center', maxWidth: '800px', margin: 'auto' }}>
+    <div style={{ textAlign: 'center', maxWidth: '800px', margin: 'auto' , backgroundColor: '#f8f8f8' }}>
       <h1 style={{ color: 'maroon' }}>Welcome, Future Morehouse Students!</h1>
       <p>Here you can find relevant advice for your journey as a Morehouse Computer Science student.</p>
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-        <div style={{ marginRight: '10px' }}>
-          <Link to="/basic-form">Go to Sign Up Sheet</Link>
-        </div>
         <div>
           <Link to="/advice">Advice + Current Events</Link>
         </div>

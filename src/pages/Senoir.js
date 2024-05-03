@@ -9,7 +9,7 @@ const Senior = () => {
     { key: 'networking', text: 'Capitalize on Networking Opportunities: Engage in extensive networking to connect with potential employers and professionals in your field.' },
     { key: 'capstone', text: 'Complete a Capstone Project or Thesis: Develop a significant project or thesis that highlights your skills and learning over your academic career.' }
   ];
-  const courses = ["Senior Design Project", "Advanced Database Systems", "Network Security"];
+  const courses = ["Senior Design Project", "Advanced Database Systems", "Advanced Software Engineering"];
   const books = [
     "The Lean Startup by Eric Ries",
     "Cracking the Coding Interview by Gayle Laakmann McDowell"
