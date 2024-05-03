@@ -11,8 +11,11 @@ const Home = () => {
         <div style={{ marginRight: '10px' }}>
           <Link to="/basic-form">Go to Sign Up Sheet</Link>
         </div>
-        <div>
+        <div style={{ marginRight: '10px' }}>
           <Link to="/advice">Advice + Current Events</Link>
+        </div>
+        <div>
+          <Link to="/extracurriculars">Extracurriculars</Link>
         </div>
       </div>
       <hr />
@@ -23,3 +26,4 @@ const Home = () => {
 };
 
 export default Home;
+
