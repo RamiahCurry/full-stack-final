@@ -1,0 +1,40 @@
+.year-layout {
+    text-align: center; /* Center the title */
+    margin: 20px;
+  }
+  
+  .page-title {
+    margin-bottom: 20px; /* Space between title and content sections */
+  }
+  
+  .content-sections {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between the sections */
+    align-items: flex-start; /* Aligns items at the top */
+  }
+  
+  .advice-section, .courses-books-section, .resources-section {
+    flex: 1; /* Each section takes equal width */
+    margin: 0 10px; /* Adds horizontal spacing between columns */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .courses-section, .books-section {
+    margin-top: 10px; /* Space between courses and books */
+  }
+  
+  ul {
+    padding-left: 20px; /* Indent for list */
+    list-style-type: none; /* No bullet points */
+  }
+  
+  li {
+    margin-bottom: 5px; /* Spacing between list items */
+  }
+  
+  .resources-section a {
+    display: block; /* Each link on a new line */
+    margin-bottom: 5px;
+  }
+  
