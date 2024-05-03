@@ -1,4 +1,5 @@
 import React, { createRef }  from 'react';
+import axios from 'axios';
 
 class BasicForm extends React.Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class BasicForm extends React.Component {
     });
   };
 
-  onFormSubmit = (evt) => {
+  onFormSubmit = async(evt) => {
     evt.preventDefault();
 
     const email = this.emailRef.current.value.trim();
@@ -75,6 +76,18 @@ class BasicForm extends React.Component {
       passwordError: '',
       phoneError: ''
     });
+
+    try {
+      const response = await axios.post('http://localhost:3001/product', {
+        email,
+        password,
+        phoneNumber: number
+      });
+      
+      console.log(response.data); // Optionally handle response data
+    } catch (error) {
+      console.error('Error submitting form:', error.message);
+    }
 
     // Clear input fields after submission
     this.emailRef.current.value = '';

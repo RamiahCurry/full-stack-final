@@ -1,27 +1,29 @@
-import logo from './logo.svg';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import BasicForm from './pages/BasicForm';
 import Advice from './pages/Advice';
+import Login from './pages/login';  
 import './App.css';
-import FreshmanAdvice from './components/FreshmanAdvice';
-import SophomoreAdvice from './components/SophomoreAdvice';
-import JuniorAdvice from './components/JuniorAdvice';
-import SeniorAdvice from './components/SeniorAdvice';
+import Freshman from './pages/Freshman';
+import Sophomore from './pages/Sophomore';
+import Junior from './pages/Junior';
+import Senior from './pages/Senoir';
+
 
 function App() {
   return (
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route path="/basic-form" element={<BasicForm/>} />
-          <Route path="/advice" element={<Advice/>} />
-          <Route path="/advice/freshman" element={<FreshmanAdvice />} />
-          <Route path="/advice/sophomore" element={<SophomoreAdvice />} />
-          <Route path="/advice/junior" element={<JuniorAdvice />} />st
-          <Route path="/advice/senior" element={<SeniorAdvice />} />
+          <Route path="/" element={<Login />} />  // Set Login as the default route
+          <Route path="/home" element={<Home />} />
+          <Route path="/basic-form" element={<BasicForm />} />
+          <Route path="/advice" element={<Advice />} />
+          <Route path="/freshman" element={<Freshman />} />
+          <Route path="/sophomore" element={<Sophomore />} />
+          <Route path="/junior" element={<Junior />} />
+          <Route path="/senior" element={<Senior />} />
         </Routes>
       </Router>
     </div>
@@ -29,4 +31,5 @@ function App() {
 }
 
 export default App;
+
 

@@ -1,36 +1,35 @@
-.advice-container {
-    background: url('path_to_background_image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white; /* Assuming white text looks good on your background */
+.advice-background {
+    height: 100vh; /* Full viewport height */
+    background-image: url('martin.jpeg'); /* Correct the path here */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    display: flex;
+    align-items: center; /* Center the box vertically */
+    justify-content: center; /* Center the box horizontally */
+  }
+  
+  .advice-container {
+    background: white; /* White background for the advice box */
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%; /* Adjust based on preference */
+    max-width: 800px; /* Maximum width */
     text-align: center;
   }
   
-  .advice-list {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0;
+  .year-links a {
+    display: inline-block; /* Align links horizontally */
+    margin: 10px;
   }
   
-  .advice-list li {
-    margin: 20px 0;
+  .year-links img {
+    width: 100px; /* Set a fixed size for images */
+    height: 100px;
+    transition: transform 0.3s ease; /* Smooth transform effect */
   }
   
-  .advice-list li a {
-    color: white; /* Color of the links */
-    font-size: 24px; /* Larger font size */
-    text-decoration: none; /* Removes underline from links */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .advice-list li img {
-    width: 100px; /* Set the size of the images */
-    height: 100px; /* Set the size of the images */
-    margin-right: 10px; /* Spacing between image and text */
-  }
-  
-  h1 {
-    margin-bottom: 30px; /* Space below the header */
+  .year-links img:hover {
+    transform: scale(1.1); /* Slightly enlarge images on hover */
   }
   
