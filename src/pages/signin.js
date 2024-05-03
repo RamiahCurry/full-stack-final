@@ -86,7 +86,7 @@ const SignIn = () => {
 
           <input type='submit' value='Sign In' />
         </form>
-        <Link to="/login">Go to Sign Up</Link>
+        <Link to="/signup">Go to Sign Up</Link>
       </div>
     </div>
   );
