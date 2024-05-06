@@ -9,7 +9,7 @@ const Sophomore = () => {
     { key: 'expand-network', text: 'Expand Your Network: Attend networking events, connect with alumni, and utilize platforms like LinkedIn to meet professionals in your field.' },
     { key: 'long-term-goals', text: 'Start Considering Your Long-Term Goals: Whether it’s graduate school or jumping straight into your career, now is the time to start planning for the future.' }
   ];
-  const courses = ["Advanced Programming", "Data Structures", "System Analysis"];
+  const courses = ["Programming II", "Data Structures", "Discrete Structures"];
   const books = [
     "The Pragmatic Programmer by Andrew Hunt and David Thomas",
     "Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma"
