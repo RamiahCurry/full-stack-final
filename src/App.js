@@ -12,6 +12,8 @@ import Freshman from './pages/Freshman';
 import Sophomore from './pages/Sophomore';
 import Junior from './pages/Junior';
 import Senior from './pages/Senoir';
+import Extracurriculars from './pages/Extracurriculars';
+import './App.css';
 
 function App() {
 
@@ -29,6 +31,7 @@ function App() {
           <Route path="/sophomore" element={<Sophomore />} />
           <Route path="/junior" element={<Junior />} />
           <Route path="/senior" element={<Senior />} />
+          <Route path="/extracurriculars" element={<Extracurriculars />} />
         </Routes>
       </Router>
     </div>

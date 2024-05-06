@@ -29,6 +29,9 @@ const Home = () => {
         <div>
           <Link to="/advice">Advice + Current Events</Link>
         </div>
+        <div>
+          <Link to="/extracurriculars">Extracurriculars</Link>
+        </div>
       </div>
       <hr />
       <h2>Morehouse Virtual Tour</h2>
@@ -50,3 +53,4 @@ const Home = () => {
 };
 
 export default Home;
+
