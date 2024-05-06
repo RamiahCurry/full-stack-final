@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { ReactSession }  from 'react-client-session';
 import './Login.css'; // Ensure the CSS is imported to style the components
 import axios from 'axios';
 
@@ -51,6 +52,7 @@ const SignIn = () => {
         
         console.log('Login response:', response.data);
 
+        ReactSession.set("Email", email);
         // Redirect to the home page if login is successful
         navigate('/home');
       } catch (error) {

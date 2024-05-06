@@ -23,14 +23,18 @@ const Home = () => {
 
   return (
     <div style={{ textAlign: 'center', maxWidth: '800px', margin: 'auto', backgroundColor: '#f8f8f8' }}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '10px' }}>
+        {/* Logout link */}
+        <Link to="/logout" style={{ textDecoration: 'none', color: 'maroon' }}>Logout</Link>
+      </div>
       <h1 style={{ color: 'maroon' }}>Welcome, Morehouse Students!</h1>
       <p>Here you can find relevant advice for your journey as a Morehouse Computer Science student.</p>
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
         <div>
-          <Link to="/advice">Advice + Current Events</Link>
+          <Link to="/advice">Advice + Current Events ||| </Link>
         </div>
         <div>
-          <Link to="/extracurriculars">Extracurriculars</Link>
+          <Link to="/extracurriculars"> Extracurriculars</Link>
         </div>
       </div>
       <hr />
